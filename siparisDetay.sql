@@ -41,7 +41,7 @@ INSERT INTO [dbo].[tblSiparisDetay]
            ,@kdvfiyat
            ,@urunAdet)
 
-set @toplam = @fiyat + @kdvfiyat
+set @toplam = @toplam + @fiyat + @kdvfiyat
 
 
 set @siparisUrunAdet = @siparisUrunAdet - 1
